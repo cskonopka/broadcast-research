@@ -12,9 +12,11 @@ year-#OfMonth-monthName
 ```
 
 ## Intention
-Design data-mining programs intended to generate content and analysis files using source content from the *edits* folder from 2015 - present. Information about the source content (.mp4) is acquired using FFprobe and ImagickMagick's *identify
+Design data-mining programs intended to generate content and analysis files using source content from the *edits* folder from 2015 - present. Source content (.mp4) information is acquired using FFprobe and ImagickMagick's *identify* program and saved as monthly .csv files. Then, use *cat* to concatenate all of the .csv files into a singular master file. 
 
-video files using FFprobe and image files using ImageMagick, outputting .csv files as open-source content. 
+``` 
+Note: CSV files have no headers. The headers for each CSV type is defined in the "Types of Data" section below. 
+```
 
 ## Ideas
 - Apply machine learning to source content and perform predictive modeling about my creative process.
