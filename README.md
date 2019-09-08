@@ -19,7 +19,7 @@ Design data-mining programs that analyze video files using FFprobe and image fil
 - Apply machine learning to source content and perform predictive modeling about my creative process.
 - Develop generative data art projects based on source content using recursion.
 - Learn and compare color space yearly, monthly, day.
-- Under
+- Collect video titles and use NLP to design generative literature programs.
 - Create a generative machine learning feedback artist toolset.
 
 
