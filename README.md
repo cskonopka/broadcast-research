@@ -30,3 +30,9 @@ Using a .png file as the source, generate a .txt histogram file using ImageMagic
 <p align="center">
   <img width="80%" height="80%" src="https://i.ibb.co/HqyXwTJ/demo-histogram-recursion.gif"/>
 </p>
+
+Example histogram .txt file
+<p align="center">
+  <img width="80%" height="80%" src="https://i.ibb.co/Hnbwr9T/demo-histogram-txt.png"/>
+</p>
+
