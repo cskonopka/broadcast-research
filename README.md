@@ -31,21 +31,22 @@ Once , effectively developing a machine learning feedback loop. The output
 2. Analysis
 
 ### Generation Programs
-### *png-recursion.go*
+
+#### *png-recursion.go*
 Create a .png file from an edit (.mp4 source) using FFmpeg and the palettegen filter.
 
 <p align="center">
   <img width="80%" height="80%" src="https://i.ibb.co/p0zLPmC/demo-png-recursion.gif"/>
 </p>
 
-### *gif-recursion.go*
+#### *gif-recursion.go*
 Use the .png file and the .mp4 source to create a new .gif file using FFmpeg.
 
 <p align="center">
   <img width="80%" height="80%" src="https://i.ibb.co/qx8HYZY/demo-gif-recursion.gif"/>
 </p>
 
-### *jpg-recursion.go*
+#### *jpg-recursion.go*
 Extract individual frames as .jpg files from the .mp4 source using FFmpeg.
 <p align="center">
   <img width="80%" height="80%" src="https://i.ibb.co/Mn0PkN0/demo-jpg-recursion.gif"/>
