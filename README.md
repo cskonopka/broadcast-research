@@ -2,7 +2,7 @@
 The *broadcast-research* project is a collection of data-mining programs written in Go meant to collect various forms of data about my personal analog video synthesis catalog spanning from 2015 - present.
 
 ## Scenario
-
+When I started to explore analog video synthesis, I dedcided I wanted to archive all of my work in managable way for my future self and for potential ML projects. As the videos piled up, 
 
 ## Programs
 
@@ -25,6 +25,12 @@ Extract individual frames as .jpg files from the .mp4 source using FFmpeg.
   <img width="80%" height="80%" src="https://i.ibb.co/Mn0PkN0/demo-jpg-recursion.gif"/>
 </p>
 
+Example output of frame extraction to dedicated jpg directory.
+<p align="center">
+  <img width="80%" height="80%" src="https://i.ibb.co/zhxGL42/demo-jpg-output.png
+"/>
+</p>
+
 ### *histogram-recursion.go*
 Using a .png file as the source, generate a .txt histogram file using ImageMagick
 <p align="center">
@@ -36,3 +42,8 @@ Example histogram .txt file
   <img width="80%" height="80%" src="https://i.ibb.co/Hnbwr9T/demo-histogram-txt.png"/>
 </p>
 
+## Types of Data
+
+### FFmpeg
+
+### ImageMagick
