@@ -12,8 +12,9 @@ year-#OfMonth-monthName
 ```
 
 ## Intention
-Using the analog video synthesis collection, 
-Design data-mining programs that analyze video files using FFprobe and image files using ImageMagick, outputting .csv files as open-source content. 
+Design data-mining programs intended to generate content and analysis files using source content from the *edits* folder from 2015 - present. Information about the source content (.mp4) is acquired using FFprobe and ImagickMagick's *identify
+
+video files using FFprobe and image files using ImageMagick, outputting .csv files as open-source content. 
 
 ## Ideas
 - Apply machine learning to source content and perform predictive modeling about my creative process.
