@@ -6,12 +6,10 @@ When I started to explore analog video synthesis, I consciously made the decisio
 
 ```
 year-#OfMonth-monthName
-- year-#OfMonth-Date
+-- year-#OfMonth-Date
+---- edits
+---- raw
 ```
-Example
-<p align="center">
-  <img width="65%" height="65%" src="https://i.ibb.co/XYZ7Gy1/demo-folderstructure.png"/>
-</p>
 
 ## Intention
 Using the analog video synthesis collection, 
@@ -20,8 +18,9 @@ Design data-mining programs that analyze video files using FFprobe and image fil
 ## Ideas
 - Apply machine learning to source content and perform predictive modeling about my creative process.
 - Develop generative data art projects based on source content using recursion.
-- Learn about color
+- Learn and compare color space yearly, monthly, day.
 - Under
+- Create a generative machine learning feedback artist toolset.
 
 
 Once , effectively developing a machine learning feedback loop. The output 
