@@ -14,18 +14,19 @@ Create a .png file from an edit (.mp4 source) using FFmpeg and the palettegen fi
 </p>
 
 ### *gif-recursion.go*
-Use the .png file and the .mp4 source to create a new .gif file.
+Use the .png file and the .mp4 source to create a new .gif file using FFmpeg.
 <p align="center">
   <img width="80%" height="80%" src="https://i.ibb.co/qx8HYZY/demo-gif-recursion.gif"/>
 </p>
 
 ### *jpg-recursion.go*
-
+Extract individual frames as .jpg files from the .mp4 source using FFmpeg.
 <p align="center">
   <img width="80%" height="80%" src="https://i.ibb.co/Mn0PkN0/demo-jpg-recursion.gif"/>
 </p>
 
 ### *histogram-recursion.go*
+Using a .png file as the source, generate a .txt histogram file using ImageMagick
 <p align="center">
   <img width="80%" height="80%" src="https://i.ibb.co/HqyXwTJ/demo-histogram-recursion.gif"/>
 </p>
