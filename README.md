@@ -1,7 +1,8 @@
 # broadcast-research
-A repository for all of the spreadsheets 
+The *broadcast-research* project is a collection of data-mining programs written in Go meant to collect various forms of data about my personal analog video synthesis catalog spanning from 2015 - present.
 
 ## Scenario
+
 
 ## Programs
 
