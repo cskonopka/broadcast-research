@@ -2,6 +2,7 @@
 ## Image Magick
 
 ### CSV headers
+```
 Image	
 Format	
 Mime type	
@@ -88,3 +89,4 @@ Pixels per second
 User time	
 Elapsed time	
 Version
+```
