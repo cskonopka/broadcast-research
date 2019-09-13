@@ -8,12 +8,14 @@ Format
 Mime type	
 Class	
 Geometry	
-Resolution	Print size	
+Resolution	
+Print size	
 Units	
 Colorspace	
 Type	
 Base Type	
-Endianess	Depth	
+Endianess	
+Depth	
 Red	Green	
 Blue	
 Alpha	
@@ -29,7 +31,8 @@ green min
 green max	
 green mean	
 green standard deviation	
-green kurtosis	green skewness	
+green kurtosis	
+green skewness	
 green entropy	
 blue min	
 blue max	
