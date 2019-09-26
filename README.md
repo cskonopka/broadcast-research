@@ -9,17 +9,6 @@
 ## Project Background
 When I started using analog video synthesizers in 2015, I actively decided I wanted to record video content each time I sat down for a studio session or live performance. Each piece is a first-hand documentation entry that provides insight about subconscious trends and conscious trends. Documenting daily experiences evolve into a library of emotions that extend the potential of video art as a psychological research topic. Below is an example of the folder structure I've been using since 2015.
 
-## Intention
-Design data-mining programs intended to generate content and analysis files using source content from the edits folder from 2015 - present. Source content (.mp4) information is acquired using FFprobe and ImagickMagick's identify program and saved as monthly .csv files. Then, use cat to concatenate all of the .csv files into a singular master file.
-
-*Note: CSV files have no headers. The data headers for .csv files are located in the README.md file of the specific data set*
-
-## Requirements
-* Go
-* FFmpeg
-* FFprobe
-* ImageMagick
-
 ### *Framework v1*
 * **edits**: Edited source content for public consumption
 * **raw**: Raw source content
@@ -78,7 +67,11 @@ year-#OfMonth-monthName
 -- 2015-04-april-FFProbeAnalysis-V4.csv
 -- 2015-04-april-png-imagemagick.csv
 ```
+*** 
+## Intention
+Design data-mining programs intended to generate content and analysis files using source content from the edits folder from 2015 - present. Source content (.mp4) information is acquired using FFprobe and ImagickMagick's identify program and saved as monthly .csv files. Then, use cat to concatenate all of the .csv files into a singular master file.
 
+*Note: CSV files have no headers. The data headers for .csv files are located in the README.md file of the specific data set*
 *** 
 ## Data Points
 Data extracted from content in the *edits* folder will be in the form of .csv or .txt. 
@@ -96,8 +89,13 @@ Title-raw | Title-spaced
 --- | --- |
 
 ### Histograms
+*** 
 
-
+## Requirements
+* Go
+* FFmpeg
+* FFprobe
+* ImageMagick
 *** 
 ## Program Types
 1. Generation -> *Programs used to generate new content sources (i.e. .png, .jpg, .gif)*
