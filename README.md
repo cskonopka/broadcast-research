@@ -16,6 +16,57 @@ A detailed overview of the project can be found in the [wiki](https://github.com
 ## Project Background
 When I started using analog video synthesizers in 2015, I actively decided I wanted to record video content each time I sat down for a studio session or live performance. Each piece is a first-hand documentation entry that provides insight about subconscious trends and conscious trends. Documenting daily experiences evolve into a library of emotions that extend the potential of video art as a psychological research topic.
 
+## Intention
+Design data-mining programs intended to generate content and analysis files using source content from the edits folder from 2015 - present. Source content (.mp4) information is acquired using FFprobe and ImagickMagick's identify program and saved as monthly .csv files. Then, use cat to concatenate all of the .csv files into a singular master file.
+
+*Note: CSV files have no headers. The data headers for .csv files are located in the README.md file of the specific data set*
+
+## Program Types
+1. Generation -> *Programs used to generate new content sources (i.e. .png, .jpg, .gif)*
+2. Analysis -> *Programs that use FFprobe or ImageMagick to create analysis files (.csv) based various source content.
+
+### Generation Programs
+
+#### *png-recursion.go*
+Create a .png file from an edit (.mp4 source) using FFmpeg and the palettegen filter.
+<p align="center">
+  <img width="80%" height="80%" src="https://i.ibb.co/p0zLPmC/demo-png-recursion.gif"/>
+</p>
+
+#### *gif-recursion.go*
+Use the .png file and the .mp4 source to create a new .gif file using FFmpeg.
+<p align="center">
+  <img width="80%" height="80%" src="https://i.ibb.co/qx8HYZY/demo-gif-recursion.gif"/>
+</p>
+
+#### *jpg-recursion.go*
+Extract individual frames as .jpg files from the .mp4 source using FFmpeg.
+<p align="center">
+  <img width="80%" height="80%" src="https://i.ibb.co/Mn0PkN0/demo-jpg-recursion.gif"/>
+</p>
+
+Example output of frame extraction to dedicated jpg directory.
+<p align="center">
+  <img width="80%" height="80%" src="https://i.ibb.co/zhxGL42/demo-jpg-output.png"/>
+</p>
+
+### Analysis Programs
+
+#### *histogram-recursion.go*
+Using a .png file as the source, generate a .txt histogram file using ImageMagick
+<p align="center">
+  <img width="80%" height="80%" src="https://i.ibb.co/HqyXwTJ/demo-histogram-recursion.gif"/>
+</p>
+
+Example histogram .txt file
+<p align="center">
+  <img width="80%" height="80%" src="https://i.ibb.co/Hnbwr9T/demo-histogram-txt.png"/>
+</p>
+
+
+
+
+
 ## Who am I?
 My name is Christopher Konopka and I'm a video artist with a focus on modular analog video synthesizers. 
 
