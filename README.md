@@ -18,18 +18,10 @@ A detailed overview of the project can be found in the [wiki](https://github.com
 When I started using analog video synthesizers in 2015, I actively decided I wanted to record video content each time I sat down for a studio session or live performance. Each piece is a first-hand documentation entry that provides insight about subconscious trends and conscious trends. Documenting daily experiences evolve into a library of emotions that extend the potential of video art as a psychological research topic. Below is an example of the folder structure I've been using since 2015.
 
 
-* year-#OfMonth-monthName-FFProbeAnalysis-V4.csv: Monthly content analysis document containing the output of FFprobe for each video in the *edits* directory.
-* year-#OfMonth-monthName-png-imagemagick.csv: Monthly content analysis document containing the output of ImageMagick *identify* for each video in the *edits* directory.
-* edits: Edited source content for public consumption
-* gifs:  Gifs generated using FFmpeg from content in *edits* and using *.png* files as a reference.
-* histo: Histograms generated using ImageMagick from the *.png* reference files.
-* jpg: Extracted *.jpg* frames from content in *edits*
-* png: Pngs generated using FFmpeg and the filter *palettegen* used to generated gifs.
-* raw: Raw source content
-* stills: Stills manually extracted from *raw* files
+### *Framework v1*
+* **edits**: Edited source content for public consumption
+* **raw**: Raw source content
 
-
-*Framework v1*
 ``` 
 year-#OfMonth-monthName
 -- year-#OfMonth-Date
@@ -37,7 +29,7 @@ year-#OfMonth-monthName
 ---- raw
 ```
 
-*Framework v1 in reality*
+*in reality*
 ``` 
 2015-04-april
 -- 2015-04-01
@@ -47,7 +39,14 @@ year-#OfMonth-monthName
 
 Using tools I've created for this project, I've expanded the scope of the initial framework to include png, jpg, histograms and analysis files.
 
-*Framework v2*
+### *Framework v2*
+* **year-#OfMonth-monthName-FFProbeAnalysis-V4.csv**: Monthly content analysis document containing the output of FFprobe for each video in the *edits* directory.
+* **year-#OfMonth-monthName-png-imagemagick.csv**: Monthly content analysis document containing the output of ImageMagick *identify* for each video in the *edits* directory.
+* **gifs**:  Gifs generated using FFmpeg from content in *edits* and using *.png* files as a reference.
+* **histo**: Histograms generated using ImageMagick from the *.png* reference files.
+* **jpg**: Extracted *.jpg* frames from content in *edits*
+* **png**: Pngs generated using FFmpeg and the filter *palettegen* used to generated gifs.
+* **stills**: Stills manually extracted from *raw* files
 ``` 
 year-#OfMonth-monthName
 -- year-#OfMonth-monthName-FFProbeAnalysis-V4.csv
@@ -62,7 +61,7 @@ year-#OfMonth-monthName
 ---- stills
 ```
 
-*Framework v2 in reality*
+*in reality*
 
 ``` 
 2015-04-april
@@ -78,12 +77,26 @@ year-#OfMonth-monthName
 -- 2015-04-april-png-imagemagick.csv
 ```
 
-
 *** 
 ## Intention
 Design data-mining programs intended to generate content and analysis files using source content from the edits folder from 2015 - present. Source content (.mp4) information is acquired using FFprobe and ImagickMagick's identify program and saved as monthly .csv files. Then, use cat to concatenate all of the .csv files into a singular master file.
 
 *Note: CSV files have no headers. The data headers for .csv files are located in the README.md file of the specific data set*
+
+## Data 
+
+### FFprobe
+Filename | FolderDate | Folder Month | Folder Day | Folder | Year | Edit Date | Edit Month | Edit Day | Edit Year | Edit Day Number | Timestamp | Timezone | Duration | Size | Bitrate Format | Formant Long
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+
+### ImageMagick
+Image | Format | Mime type | Class | Geometry | Resolution | Print size | Units | Colorspace | Type | Base Type | Endianess | Depth | Red | Green | Blue | Alpha | Pixels | red min | red max | red mean | red standard deviation | red kurtosis | red skewness | red entropy | green min | green max | green mean | green standard deviation | green kurtosis | green skewness | green entropy | blue min | blue max | blue mean | blue standard deviation | blue kurtosis | blue skewness | blue entropy | alpha min | alpha max | alpha mean | alpha standard deviation | alpha kurtosis | alpha skewness | alpha entropy | imagstats min | imagstats max | imagstats mean | imagstats standard deviation | imagstats kurtosis | imagstats skewness | imagstats entropy | Colors | Rendering intent | Gamma | chromaticity red primary | chromaticity green primary | chromaticity blue primary | chromaticity white point | Matte color | Background color | Border color | Transparent color | Interlace | Intensity | Compose | Page geometry | Dispose | Iterations | Compression | Orientation | Prop date create | Prop date modify | png:IHDR.bit-depth-orig | png:IHDR.bit_depth | png:IHDR.color-type-orig | png:IHDR.color_type | png:IHDR.interlace_method | png:IHDR.width,height | png:pHYs | png:sRGB | Prop signature | Artifacts verbose | Tainted | Filesize | Number pixels | Pixels per second | User time | Elapsed time | Version
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
+
+### Titles
+Title-raw | Title-spaced
+--- | --- |
+
 *** 
 ## Program Types
 1. Generation -> *Programs used to generate new content sources (i.e. .png, .jpg, .gif)*
@@ -126,8 +139,6 @@ Example histogram .txt file
 <p align="center">
   <img width="80%" height="80%" src="https://i.ibb.co/Hnbwr9T/demo-histogram-txt.png"/>
 </p>
-
-
 
 
 *** 
