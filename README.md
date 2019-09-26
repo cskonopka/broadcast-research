@@ -1,11 +1,9 @@
 # broadcast-research
-*broadcast-research* is data art project that explores the potential of analog video synthesis as a generative feedback tool for creating artistic works. Written in Go, the project seeks to use data-mining, machine learning and NLP to gain new insights about the catalog and learn about interlaced subconscious psychological trends. 
+*broadcast-research* is a data project that explores the potential of analog video synthesis as a new content source for research and for generating new tools for artistic endeavours. The purpose of the project is to use data-mining to create an open-source data pool and learn more about the psychological trends of the creative process by applying Machine Learning and NLP.
 
 <p align="center">
   <img width="65%" height="65%" src="https://i.ibb.co/WkrxHZj/cskonopka-04.png"/>  
 </p>
-
-A detailed overview of the project can be found in the [wiki](https://github.com/cskonopka/broadcast-research/wiki).
 
 *** 
 ## Project Background
