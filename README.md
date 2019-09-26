@@ -7,16 +7,20 @@
 
 A detailed overview of the project can be found in the [wiki](https://github.com/cskonopka/broadcast-research/wiki).
 
-## Requirements
-* Go
-* FFprobe
-* FFmpeg
-* ImageMagick
-
 *** 
 ## Project Background
 When I started using analog video synthesizers in 2015, I actively decided I wanted to record video content each time I sat down for a studio session or live performance. Each piece is a first-hand documentation entry that provides insight about subconscious trends and conscious trends. Documenting daily experiences evolve into a library of emotions that extend the potential of video art as a psychological research topic. Below is an example of the folder structure I've been using since 2015.
 
+## Intention
+Design data-mining programs intended to generate content and analysis files using source content from the edits folder from 2015 - present. Source content (.mp4) information is acquired using FFprobe and ImagickMagick's identify program and saved as monthly .csv files. Then, use cat to concatenate all of the .csv files into a singular master file.
+
+*Note: CSV files have no headers. The data headers for .csv files are located in the README.md file of the specific data set*
+
+## Requirements
+* Go
+* FFmpeg
+* FFprobe
+* ImageMagick
 
 ### *Framework v1*
 * **edits**: Edited source content for public consumption
@@ -78,24 +82,23 @@ year-#OfMonth-monthName
 ```
 
 *** 
-## Intention
-Design data-mining programs intended to generate content and analysis files using source content from the edits folder from 2015 - present. Source content (.mp4) information is acquired using FFprobe and ImagickMagick's identify program and saved as monthly .csv files. Then, use cat to concatenate all of the .csv files into a singular master file.
+## Data Points
+Data extracted from content in the *edits* folder will be in the form of .csv or .txt. 
 
-*Note: CSV files have no headers. The data headers for .csv files are located in the README.md file of the specific data set*
-
-## Data 
-
-### FFprobe
+### FFprobe (csv)
 Filename | FolderDate | Folder Month | Folder Day | Folder | Year | Edit Date | Edit Month | Edit Day | Edit Year | Edit Day Number | Timestamp | Timezone | Duration | Size | Bitrate Format | Formant Long
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 
-### ImageMagick
+### ImageMagick (csv)
 Image | Format | Mime type | Class | Geometry | Resolution | Print size | Units | Colorspace | Type | Base Type | Endianess | Depth | Red | Green | Blue | Alpha | Pixels | red min | red max | red mean | red standard deviation | red kurtosis | red skewness | red entropy | green min | green max | green mean | green standard deviation | green kurtosis | green skewness | green entropy | blue min | blue max | blue mean | blue standard deviation | blue kurtosis | blue skewness | blue entropy | alpha min | alpha max | alpha mean | alpha standard deviation | alpha kurtosis | alpha skewness | alpha entropy | imagstats min | imagstats max | imagstats mean | imagstats standard deviation | imagstats kurtosis | imagstats skewness | imagstats entropy | Colors | Rendering intent | Gamma | chromaticity red primary | chromaticity green primary | chromaticity blue primary | chromaticity white point | Matte color | Background color | Border color | Transparent color | Interlace | Intensity | Compose | Page geometry | Dispose | Iterations | Compression | Orientation | Prop date create | Prop date modify | png:IHDR.bit-depth-orig | png:IHDR.bit_depth | png:IHDR.color-type-orig | png:IHDR.color_type | png:IHDR.interlace_method | png:IHDR.width,height | png:pHYs | png:sRGB | Prop signature | Artifacts verbose | Tainted | Filesize | Number pixels | Pixels per second | User time | Elapsed time | Version
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
 
-### Titles
+### Titles (txt & csv)
 Title-raw | Title-spaced
 --- | --- |
+
+### Histograms
+
 
 *** 
 ## Program Types
