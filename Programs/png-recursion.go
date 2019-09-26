@@ -19,7 +19,12 @@ type FileObject struct {
 func main() {
 
 	dir := []string{
-		"/Users/io/Desktop/2000-01-january",
+		"/Volumes/vs07-072018-052019/2018-07-july",
+		// "/Volumes/vs07-072018-052019/2018-08-august",
+		// "/Volumes/vs07-072018-052019/2018-09-september",
+		// "/Volumes/vs07-072018-052019/2018-10-october",
+		// "/Volumes/vs07-072018-052019/2018-11-november",
+		// "/Volumes/vs07-072018-052019/2018-12-december",
 	}
 
 	for months := 0; months < len(dir); months++ {
