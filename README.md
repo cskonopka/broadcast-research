@@ -17,6 +17,18 @@ A detailed overview of the project can be found in the [wiki](https://github.com
 ## Project Background
 When I started using analog video synthesizers in 2015, I actively decided I wanted to record video content each time I sat down for a studio session or live performance. Each piece is a first-hand documentation entry that provides insight about subconscious trends and conscious trends. Documenting daily experiences evolve into a library of emotions that extend the potential of video art as a psychological research topic. Below is an example of the folder structure I've been using since 2015.
 
+
+* year-#OfMonth-monthName-FFProbeAnalysis-V4.csv: Monthly content analysis document containing the output of FFprobe for each video in the *edits* directory.
+* year-#OfMonth-monthName-png-imagemagick.csv: Monthly content analysis document containing the output of ImageMagick *identify* for each video in the *edits* directory.
+* edits: Edited source content for public consumption
+* gifs:  Gifs generated using FFmpeg from content in *edits* and using *.png* files as a reference.
+* histo: Histograms generated using ImageMagick from the *.png* reference files.
+* jpg: Extracted *.jpg* frames from content in *edits*
+* png: Pngs generated using FFmpeg and the filter *palettegen* used to generated gifs.
+* raw: Raw source content
+* stills: Stills manually extracted from *raw* files
+
+
 *Framework v1*
 ``` 
 year-#OfMonth-monthName
@@ -66,9 +78,6 @@ year-#OfMonth-monthName
 -- 2015-04-april-png-imagemagick.csv
 ```
 
-```
-
-```
 
 *** 
 ## Intention
