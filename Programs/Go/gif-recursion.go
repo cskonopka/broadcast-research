@@ -10,7 +10,19 @@ import (
 func main() {
 	// source month directory
 	dir := []string{
-		"/Users/io/Desktop/2000-01-january",
+		"/Volumes/vs07-072018-052019/2018-07-july",
+		"/Volumes/vs07-072018-052019/2018-08-august",
+		"/Volumes/vs07-072018-052019/2018-09-september",
+		"/Volumes/vs07-072018-052019/2018-10-october",
+		"/Volumes/vs07-072018-052019/2018-11-november",
+		"/Volumes/vs07-072018-052019/2018-12-december",
+		// "/Volumes/vs07-072018-052019/2019-01-january",
+		// "/Volumes/vs07-072018-052019/2019-02-february",
+		// "/Volumes/vs07-072018-052019/2019-03-march",
+		// "/Volumes/vs07-072018-052019/2019-04-april",
+		// "/Volumes/vs07-072018-052019/2019-05-may",
+		// "/Volumes/vs07-072018-052019/2019-06-june",
+		// "/Volumes/vs07-072018-052019/2019-07-july",
 	}
 
 	// iterate over the months
