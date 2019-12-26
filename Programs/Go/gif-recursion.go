@@ -11,6 +11,7 @@ func main() {
 	// source month directory
 	dir := []string{
 		"/Volumes/vs07-072018-052019/2018-07-july",
+		"/Volumes/vs07-072018-052019/2018-07-july",
 		"/Volumes/vs07-072018-052019/2018-08-august",
 		"/Volumes/vs07-072018-052019/2018-09-september",
 		"/Volumes/vs07-072018-052019/2018-10-october",
