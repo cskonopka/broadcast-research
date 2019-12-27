@@ -37,11 +37,9 @@ type operations struct {
 	}
 }
 
+// Content Engine
 func (o operations) DefineTargets() {
-	// fmt.Println(o.directory)
-	var collectFiles []string
-	var jj []string
-	var result []string
+	var collectFiles, jj, result []string
 
 	fileList := []string{}
 	filepath.Walk(o.directory, func(path string, f os.FileInfo, err error) error {
@@ -66,41 +64,40 @@ func (o operations) DefineTargets() {
 				} else {
 					encountered[jj[v]] = true
 					result = append(result, jj[v])
-					fmt.Println("created")
-					// Create directories here
-					fmt.Println(jj[v])
-
+					// Create directories
+					fmt.Println("directory created")
 					cmd3 := exec.Command("mkdir", jj[v]+o.outputtype)
 					cmd3.Run()
 				}
 			}
 		}
+		// Defer the creation of the content until all folders have been created
 		defer generateContent(o, dirFiles[stuff], editName)
 	}
+	// Clear buffers
 	collectFiles, jj, result = nil, nil, nil
 }
 
+// generateContent
+// Define an operation using "case" and pass filens from the directory
 func generateContent(o operations, dirFiles string, editName []string) {
 	switch o.optype {
-	case "png":
-		fmt.Println("create pngs")
+	case "png": // create pngs
 		mp4File := dirFiles
 		pngFile := editName[0][:len(editName[0])-7] + "/png/" + editName[1][:len(editName[1])-4] + ".png"
 		cmd := exec.Command("ffmpeg", "-y", "-ss", "0", "-t", "11", "-i", mp4File, "-filter_complex", "[0:v] palettegen", pngFile)
 		cmd.Run()
-	case "gif":
-		// create gifs
-		fmt.Println("create gifs")
+	case "gif": // create gifs
 		mp4File := dirFiles
 		gifFile := editName[0][:len(editName[0])-7] + "/png/" + editName[1][:len(editName[1])-4] + ".gif"
 		cmd := exec.Command("ffmpeg", "-ss", "0", "-t", "11", "-i", mp4File, "-filter_complex", "[0:v] fps=24,scale=w=480:h=-1,split [a][b];[a] palettegen=stats_mode=single [p];[b][p] paletteuse=new=1", gifFile)
 		cmd.Run()
 
-		fmt.Println("gif moved to directory")
+		// Move .gif to gif directory
 		destinationDirectory := editName[0][:len(editName[0])-7] + "/gif"
 		cmd2 := exec.Command("mv", gifFile, destinationDirectory)
 		cmd2.Run()
-	case "jpg":
+	case "jpg": // create jpgs
 		fmt.Println("create jpgs")
 		jpgFolder := editName[0][:len(editName[0])-7] + "/jpg/" + editName[1][:len(editName[1])-4]
 		cmd3 := exec.Command("mkdir", jpgFolder)
@@ -109,8 +106,7 @@ func generateContent(o operations, dirFiles string, editName []string) {
 		mp4File := dirFiles
 		jpgFrames := editName[0][:len(editName[0])-7] + "/jpg/" + editName[1][:len(editName[1])-4] + "/" + editName[1][:len(editName[1])-4] + "-frame-%04d.jpg"
 		defer generateJpgs(mp4File, jpgFrames)
-		fmt.Println(mp4File, jpgFrames)
-	case "histogram1":
+	case "histogram1": // create histogram
 		fmt.Println("create histo1")
 		histo1Folder := editName[0][:len(editName[0])-7] + "/histogram"
 		cmd := exec.Command("mkdir", histo1Folder)
@@ -133,31 +129,36 @@ func generateHistogram1(pngFile string, histo1File string) {
 }
 
 func main() {
-	var br operations
-	globalDir := "/Users/csk/Documents/_REPO/1987-06-may/"
 
-	// PNG
+	globalDir := "/Users/csk/Documents/_REPO/1987-06-may/"
+	runSuite(globalDir)
+
+}
+
+func runSuite(globalDir string) {
+	var br operations
+	// PNG test
 	br.directory = globalDir
 	br.outputtype = "/png"
 	br.optype = "png"
 	var i1 BroadcastResearch = br
 	i1.DefineTargets()
 
-	// GIF
+	// GIF test
 	br.directory = globalDir
 	br.outputtype = "/gif"
 	br.optype = "gif"
 	var i2 BroadcastResearch = br
 	i2.DefineTargets()
 
-	// JPG
+	// JPG test
 	br.directory = globalDir
 	br.outputtype = "/jpg"
 	br.optype = "jpg"
 	var i3 BroadcastResearch = br
 	i3.DefineTargets()
 
-	// HISTOGRAM-1
+	// HISTOGRAM-1 test
 	br.directory = globalDir
 	br.outputtype = "/histogram"
 	br.optype = "histogram1"
