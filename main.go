@@ -185,26 +185,6 @@ func generateCSV(input []string) {
 		// Location of the current file
 		loc := s[1][20:23]
 
-		// Sanity check
-		fmt.Println("CHECKEM______________________________________")
-		fmt.Println("Title", title+"\n",
-			"FolderMonth: ", folderMonth+"\n",
-			"FolderDay: ", folderDay+"\n",
-			"FolderYear: ", folderYear+"\n",
-			"EditMonth: ", editMonth+"\n",
-			"EditDay: ", editDay+"\n",
-			"EditYear: ", editYear+"\n",
-			"EditDate: ", editDate[:2]+"\n",
-			"Type: ", typer+"\n",
-			"Path: ", path+"\n",
-			"Timestamp: ", timestamp+"\n",
-			"Timezone: ", loc+"\n",
-			"Duration: ", probed.Format.Duration+"\n",
-			"FileSize: ", probed.Format.Size+"\n",
-			"BitRate: ", probed.Format.BitRate+"\n",
-			"FormatNames: ", probed.Format.FormatName+"\n",
-			"FormatLong: ", probed.Format.FormatLongName)
-
 		matrix = append(matrix, []string{
 			title,
 			folderMonth,
