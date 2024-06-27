@@ -1,15 +1,16 @@
-# broadcast-research
+<h3 align="center">
+  <img height="60%" width="60%" src="https://github.com/cskonopka/broadcast-research/blob/master/img/broadcast-research-logo.png?raw=true"/>
+</h3>
+
+<p align="center"><em>Datamining analog video</em></p>
+
+# Overview
 *broadcast-research* is a data project that explores the potential of analog video synthesis as a new content source for research and for generating new tools for artistic endeavours. The purpose of the project is to use data-mining to create an open-source data pool and learn more about the psychological trends of the creative process by applying Machine Learning and NLP.
 
-<p align="center">
-  <img width="65%" height="65%" src="https://i.ibb.co/WkrxHZj/cskonopka-04.png"/>  
-</p>
-
-*** 
-## Project Background
+# Project Background
 When I started using analog video synthesizers in 2015, I actively decided I wanted to record video content each time I sat down for a studio session or live performance. Each piece is a first-hand documentation entry that provides insight about subconscious trends and conscious trends. Documenting daily experiences evolve into a library of emotions that extend the potential of video art as a psychological research topic. Below is an example of the folder structure I've been using since 2015.
 
-### *Framework v1*
+# Framework v1
 * **edits**: Edited source content for public consumption
 * **raw**: Raw source content
 
@@ -30,7 +31,7 @@ year-#OfMonth-monthName
 
 Using tools I've created for this project, I've expanded the scope of the initial framework to include png, jpg, histograms and analysis files.
 
-### *Framework v2*
+# Framework v2
 * **year-#OfMonth-monthName-FFProbeAnalysis-V4.csv**: Monthly content analysis document containing the output of FFprobe for each video in the *edits* directory.
 * **year-#OfMonth-monthName-png-imagemagick.csv**: Monthly content analysis document containing the output of ImageMagick *identify* for each video in the *edits* directory.
 * **gifs**:  Gifs generated using FFmpeg from content in *edits* and using *.png* files as a reference.
