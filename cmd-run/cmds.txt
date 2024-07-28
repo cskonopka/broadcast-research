@@ -1,0 +1,7 @@
+sh avs.sh /Volumes/vs07_072018-072019/2010-01-january /Volumes/AVS-EDITS/2010/2010-01-january
+sh avs.sh /Volumes/vs07_072018-072019/2010-02-february /Volumes/AVS-EDITS/2010/2010-02-february
+sh avs.sh /Volumes/vs07_072018-072019/2019-03-march /Volumes/AVS-EDITS/2019/2019-03-march
+sh avs.sh /Volumes/vs07_072018-072019/2019-04-april /Volumes/AVS-EDITS/2019/2019-04-april
+sh avs.sh /Volumes/vs07_072018-072019/2019-05-may /Volumes/AVS-EDITS/2019/2019-05-may
+sh avs.sh /Volumes/vs07_072018-072019/2019-06-june /Volumes/AVS-EDITS/2019/2019-06-june
+sh avs.sh /Volumes/vs07_072018-072019/2019-07-july /Volumes/AVS-EDITS/2019/2019-07-july
