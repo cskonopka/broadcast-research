@@ -1,0 +1,2 @@
+sh br_create-shorts.sh /Volumes/AVS-EDITS/FULL/2015/2015-06-june
+sh br_create-shorts.sh /Volumes/AVS-EDITS/FULL/2015/2015-07-july
