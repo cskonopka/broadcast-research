@@ -4,5 +4,5 @@
 
 <p align="center"><em>Datamining analog video for psychological research</em></p>
 <a href="https://cskonopka.gitbook.io/broadcast-research/"><p align="center"> 📒 <em>wiki</em> 📒 </p></a>
-<a href="https://cdm.link/painting-with-eurorack/"><p align="center"> 📝 <em>article</em> 📝 </p></a>
+<a href="https://cdm.link/painting-with-eurorack/"><p align="center"> 📝 <em>gitbook</em> 📝 </p></a>
 
