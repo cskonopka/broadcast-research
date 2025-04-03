@@ -1,8 +1,8 @@
 <h3 align="center">
-  <img height="60%" width="60%" src="https://github.com/cskonopka/broadcast-research/blob/master/img/broadcast-research-logo.png?raw=true"/>
+  <img height="60%" width="60%" src="https://github.com/cskonopka/broadcast-research/blob/master/v1/img/broadcast-research-logo.png?raw=true"/>
 </h3>
 
-<p align="center"><em>Datamining analog video</em></p>
+<p align="center"><em>Datamining psychological osmosis research using analog video synthesis</em></p>
 
 # Overview
 *broadcast-research* is a data project that explores the potential of analog video synthesis as a new content source for research and for generating new tools for artistic endeavours. The purpose of the project is to use data-mining to create an open-source data pool and learn more about the psychological trends of the creative process by applying Machine Learning and NLP.
