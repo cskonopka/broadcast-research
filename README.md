@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img height="300%" width="60%" src="https://github.com/cskonopka/broadcast-research/blob/master/v1/img/broadcast-research-logo.png?raw=true"/>
+    <img height="100%" width="100%" src="https://github.com/cskonopka/broadcast-research/blob/master/v1/img/broadcast-research-logo.png?raw=true"/>
 </h3>
 
 <p align="center"><em>Datamining analog video for psychological research</em></p>
